@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Moment from 'react-moment';
 
 class Meeting extends Component {
   render () {
@@ -11,7 +12,8 @@ class Meeting extends Component {
           {topic}
         </h2>
         <small>
-          {date}
+          <Moment>{date}</Moment>
+					{/* {date} */}
         </small>
         <p>
           {message}
